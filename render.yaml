@@ -1,0 +1,18 @@
+# Exported from Render on 2024-11-27T07:19:46Z
+services:
+- type: web
+  name: ex-cloud-2
+  runtime: static
+  repo: https://github.com/edgar-berms/ex-cloud-2
+  staticPublishPath: .
+  routes:
+  - type: redirect
+    source: /video
+    destination: https://www.youtube.com/
+  - type: rewrite
+    source: /esgi
+    destination: /index.html
+  - type: rewrite
+    source: /*
+    destination: /error/index.html
+version: "1"
