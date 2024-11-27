@@ -19,8 +19,9 @@ version: "1"
 
 database:
 - name: db
-  databaseName: db
+  databaseName: myDateBase
   user: Edgar
+  password: eb1289
   readReplicas:
   - name: dbReplica
   
