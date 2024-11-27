@@ -16,3 +16,11 @@ services:
     source: /*
     destination: /error/index.html
 version: "1"
+
+database:
+- name: db
+  databaseName: db
+  user: Edgar
+  readReplicas:
+  - name: dbReplica
+  
